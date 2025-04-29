@@ -13,5 +13,4 @@ INSERT INTO pic(images) VALUES ('{
 
 
 SELECT * FROM pic WHERE images->'img_001'->>'alt'='Front view';
-SELECT images->'#{images}'->>'alt' AS img_001_url
-FROM pic;
+SELECT images->'img_001'->>'alt' FROM pic;
